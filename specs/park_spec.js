@@ -25,4 +25,10 @@ describe("Park", function () {
     const expected = [];
     assert.deepStrictEqual(park.dinosaurs, expected);
   });
+
+  it("should be able to add dinosaur to collection", function () {
+    park.addDinosaur(dinosaur1);
+    const expected = [dinosaur1];
+    assert.deepStrictEqual(park.dinosaurs, expected);
+  });
 });
