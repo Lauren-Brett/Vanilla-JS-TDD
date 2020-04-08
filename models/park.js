@@ -12,9 +12,12 @@ Park.prototype.removeDinosaur = function (dinosaur) {
   this.dinosaurs.pop(dinosaur);
 };
 
-Park.prototype.visitorsAttracted = function () {
-  for (const dinosaur of this.dinosaurs) {
-    return dinosaur.guestsAttractedPerDay;
+Park.prototype.mostVisitors = function () {
+  let array1;
+  for (const dino of this.dinosaurs) {
+    array1 = dino.guestsAttractedPerDay;
   }
+  return Math.max(array1);
 };
+
 module.exports = Park;
