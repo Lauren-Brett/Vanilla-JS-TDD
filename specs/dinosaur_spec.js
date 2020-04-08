@@ -17,4 +17,9 @@ describe("Dinosaur", function () {
     const actual = dinosaur.diet;
     assert.strictEqual(actual, "carnivor");
   });
+
+  it("should have an average num of visitors it attracts per day", function () {
+    const actual = dinosaur.guestsAttractedPerDay;
+    assert.strictEqual(actual, 50);
+  });
 });
