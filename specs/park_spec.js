@@ -13,5 +13,8 @@ describe("Park", function () {
     assert.strictEqual(actual, "Gorgie");
   });
 
-  it("should have a ticket price", function () {});
+  it("should have a ticket price", function () {
+    const actual = park.ticketPrice;
+    assert.strictEqual(actual, 10);
+  });
 });
